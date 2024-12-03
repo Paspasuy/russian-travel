@@ -1,0 +1,13 @@
+@import url(blocks/main/main__top.css);
+@import url(blocks/lead.css);
+@import url(blocks/text_section.css);
+
+h1, h2, h3, h4, h5, h6 {
+	text-rendering: optimizeLegibility;
+}
+
+.page {
+	background-color: #2A2C2F;
+	color:  #e5e5e5;
+	font-family: Inter;
+}

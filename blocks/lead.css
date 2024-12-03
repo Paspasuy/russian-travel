@@ -1,0 +1,35 @@
+
+.lead {
+}
+
+.lead__container {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.lead__title {
+	margin: 20px auto;
+	font-size: 96px;
+	width: 50%;
+	text-align: center;
+	font-weight: 800;
+	line-height: 100px;
+	width: 80%;
+	color: #fff;
+}
+
+.lead__subtitle {
+	margin: 0 auto 20px;
+	width: 50%;
+	font-size: 30px;
+	line-height: 36px;
+	text-align: center;
+}
+
+.lead__img_subtext {
+	text-transform: uppercase;
+	font-size: 0.3em;
+	letter-spacing: 1px;
+}
