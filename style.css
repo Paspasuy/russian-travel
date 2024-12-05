@@ -2,6 +2,7 @@
 @import url(blocks/lead.css);
 @import url(blocks/text_section.css);
 @import url(blocks/photo_grid.css);
+@import url(blocks/main/places.css);
 
 h1, h2, h3, h4, h5, h6 {
 	text-rendering: optimizeLegibility;
