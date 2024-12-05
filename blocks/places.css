@@ -5,10 +5,11 @@
 
 .place {
 	display: grid;
-	grid-template-columns: minmax(352px, 472px), 1fr;
-	/*grid-template-columns: repeat(2, 1fr);*/
-	justify-items: center;
-	align-items: center;
+	grid-template-areas:
+	"title url"
+	"image text";
+	gap: 32px;
+	grid-template-columns: repeat(2, 1fr);
 }
 /*
 .place__container_heading {
@@ -22,31 +23,152 @@
 
 
 .place__title {
+	margin: 50px 0 0;
 	font-size: 72px;
 	line-height: 76px;
 	display: flex;
 	text-color: #fff;
 	font-weight: 800;
+	grid-area: "title";
+	justify-self: center;
+	align-self: self-end;
 }
 
 .place__image {
-	max-width: 440px;
+	width: 100%;
+	padding-bottom: 100%;
 /*	max-width: 440px;
 	min-width: 320px;*/
 	/*padding: 16px;*/
+	grid-area: "image";
+	background-size: cover;
+	background-position: center;
+	justify-self: center;
+	align-self: start;
+/*	background-attachment: url(../images/places/01.jpg);*/
 }
 
 .place__website {
+	align-self: end;
+	justify-self: start;
+	margin-bottom: 16px;
 }
 
 .place__website_url-heading {
+	grid-area: "url";
 	display: block;
+	color: #aaa;
+	font-size: 12px;
+	letter-spacing: 2px;
+	margin-bottom: 16px;
 }
 
 .place__website_link {
 	display: block;
+	color: #fff;
+	line-height: 22px;
+	font-size: 18px;
+}
+
+.place__website_link:hover {
+	display: block;
+	text-decoration: underline;
+	opacity: 80%;
 }
 
 
-.place__paragraph {
+.place__text {
+	align-self: start;
+	justify-self: start;
+	grid-area: "text";
+	line-height: 1.63;
+	font-size: 18px;
+}
+
+.place__image_01 {
+	background-image: url(../images/places/01.jpg);
+}
+
+.place__image_02 {
+	background-image: url(../images/places/02.jpg);
+}
+
+.place__image_03 {
+	background-image: url(../images/places/03.jpg);
+}
+
+.place__image_04 {
+	background-image: url(../images/places/04.jpg);
+}
+
+.place__image_05 {
+	background-image: url(../images/places/05.jpg);
+}
+
+@media screen and (max-width: 1024px) {
+	.place {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+		"title"
+		"url"
+		"image"
+		"text";
+		gap: 32px;
+	}
+}
+
+@media screen and (max-width: 860px) {
+	.place__title {
+		font-size: 42px;
+		line-height: 46px;
+		font-weight: 800;
+		color: #fff;
+	}
+	.lead__title {
+		font-size: 40px;
+		line-height: 44px;
+		font-weight: 800;
+		color: #fff;
+	}
+	.lead__subtitle {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.text_section__title {
+		font-size: 32px;
+		line-height: 35px;
+		font-weight: 800;
+		color: #fff;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.places {
+		width: 100%;
+	}
+	.place {
+		gap: 0px;
+	}
+	.place__title {
+		margin: 36px 16px;
+	}
+	.place__website {
+		padding: 0 16px;
+	}
+	.place__text {
+		padding: 0 16px;
+	}
+	.place__image {
+		margin: 16px 0px;
+	}
+	.lead__title {
+		font-size: 40px;
+		line-height: 44px;
+	}
+	.place__title {
+		font-size: 32px;
+		line-height: 35px;
+		font-weight: 800;
+		color: #fff;
+	}
 }
