@@ -1,0 +1,96 @@
+/*ffmpeg -i cover.png -q 1 cover.jpg*/
+
+.cover {
+	margin: 80px auto 30px;
+	width: 93vw;
+	background-image: url(../images/cover.jpg);
+	height: 58vw;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+/*	max-width: 1324px;*/
+}
+
+.cover__overlay {
+	background-color: rgba(42, 44, 47, 0.2);
+/*	background-color: #2a2c2f;*/
+/*	opacity: 30%;*/
+	height: 100%;
+	display: block;
+}
+
+.cover__text_container {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	height: 100%;
+	width: 50%;
+	margin: auto;
+	opacity: 100%;
+}
+.cover__text {
+	line-height: 1.63;
+	font-size: 18px;
+	text-align: center;
+	align-self: center;
+	width: 60%;
+	color: #fff;
+}
+.cover__title {
+	text-align: center;
+	font-size: 72px;
+	line-height: 76px;
+	color: #fff;
+	font-weight: 800;
+	margin: 0;
+}
+/*
+.place__title {
+	font-size: 72px;
+	line-height: 76px;
+	font-weight: 800;
+	color: #fff;
+}
+*/
+@media screen and (max-width: 1024px) {
+	.cover {
+		margin-top: 40px;
+		width: 100vw;
+	}
+	.cover__text_container {
+		width: 85%;
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.cover__title {
+		font-size: 42px;
+		line-height: 46px;
+		font-weight: 800;
+		color: #fff;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.cover__title {
+		font-size: 32px;
+		line-height: 35px;
+		font-weight: 800;
+		color: #fff;
+	}
+	.cover__text {
+		font-size: 14px;
+		line-height: 16px;
+	}
+}
+/*
+.cover__overlay:hover {
+	transition: background-color 0.2s;
+	background-color: rgba(0, 0, 0, 0.8);
+}*/
+.cover__overlay:hover {
+	transition: background-color 0.2s;
+/*	opacity: 80%;*/
+	background-color: rgba(42, 44, 47, 0.8);
+}

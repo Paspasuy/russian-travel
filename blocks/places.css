@@ -11,16 +11,6 @@
 	gap: 32px;
 	grid-template-columns: repeat(2, 1fr);
 }
-/*
-.place__container_heading {
-	max-width: 472px;
-	min-width: 472px;
-	
-}
-.place__container_info {
-	
-}*/
-
 
 .place__title {
 	margin: 50px 0 0;
@@ -32,20 +22,17 @@
 	grid-area: "title";
 	justify-self: center;
 	align-self: self-end;
+	text-align: center;
 }
 
 .place__image {
 	width: 100%;
 	padding-bottom: 100%;
-/*	max-width: 440px;
-	min-width: 320px;*/
-	/*padding: 16px;*/
 	grid-area: "image";
 	background-size: cover;
 	background-position: center;
 	justify-self: center;
 	align-self: start;
-/*	background-attachment: url(../images/places/01.jpg);*/
 }
 
 .place__website {
