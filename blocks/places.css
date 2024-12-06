@@ -16,13 +16,10 @@
 	margin: 50px 0 0;
 	font-size: 72px;
 	line-height: 76px;
-	display: flex;
 	text-color: #fff;
 	font-weight: 800;
 	grid-area: "title";
-	justify-self: center;
-	align-self: self-end;
-	text-align: center;
+	text-align: left;
 }
 
 .place__image {
@@ -111,25 +108,9 @@
 		font-weight: 800;
 		color: #fff;
 	}
-	.lead__title {
-		font-size: 40px;
-		line-height: 44px;
-		font-weight: 800;
-		color: #fff;
-	}
-	.lead__subtitle {
-		font-size: 16px;
-		line-height: 20px;
-	}
-	.text_section__title {
-		font-size: 32px;
-		line-height: 35px;
-		font-weight: 800;
-		color: #fff;
-	}
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 525px) {
 	.places {
 		width: 100%;
 	}
@@ -147,10 +128,6 @@
 	}
 	.place__image {
 		margin: 16px 0px;
-	}
-	.lead__title {
-		font-size: 40px;
-		line-height: 44px;
 	}
 	.place__title {
 		font-size: 32px;
