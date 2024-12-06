@@ -1,0 +1,31 @@
+.header {
+	width: 95%;
+	margin: auto;
+	padding-top: 2vh;
+	display: flex;
+}
+
+.header__logo {
+	padding-bottom: 18px;
+}
+
+.header__lang_container {
+	width: 100%;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+
+.header__lang {
+	text-decoration: none;
+	color: #fff;
+}
+
+.header__lang-underline {
+	text-decoration: underline;
+}
+
+.header__lang:hover {
+	opacity: 80%;
+}
+

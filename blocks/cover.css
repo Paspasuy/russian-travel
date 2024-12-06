@@ -8,13 +8,10 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
-/*	max-width: 1324px;*/
 }
 
 .cover__overlay {
 	background-color: rgba(42, 44, 47, 0.2);
-/*	background-color: #2a2c2f;*/
-/*	opacity: 30%;*/
 	height: 100%;
 	display: block;
 }
@@ -45,17 +42,12 @@
 	font-weight: 800;
 	margin: 0;
 }
-/*
-.place__title {
-	font-size: 72px;
-	line-height: 76px;
-	font-weight: 800;
-	color: #fff;
-}
-*/
+
 @media screen and (max-width: 1024px) {
 	.cover {
 		margin-top: 40px;
+		height: 58vw;
+		height: 63vw;
 		width: 100vw;
 	}
 	.cover__text_container {
@@ -84,13 +76,8 @@
 		line-height: 16px;
 	}
 }
-/*
+
 .cover__overlay:hover {
 	transition: background-color 0.2s;
-	background-color: rgba(0, 0, 0, 0.8);
-}*/
-.cover__overlay:hover {
-	transition: background-color 0.2s;
-/*	opacity: 80%;*/
 	background-color: rgba(42, 44, 47, 0.8);
 }

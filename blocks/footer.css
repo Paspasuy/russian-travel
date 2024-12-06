@@ -6,18 +6,12 @@
 }
 
 .footer__link {
-	/*align-self: end;
-	justify-self: end;*/
-/*	width: 100%;*/
 	display: block;
-/*	text-align: end;*/
 	color: #fff;
 	text-decoration: none;
 	padding: 8px;
 }
 .footer__copyright {
-	/*align-self: end;
-	justify-self: end;*/
 	width: 100%;
 	display: block;
 	text-align: end;
